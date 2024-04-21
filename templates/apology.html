@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <h1>Oops! We're Sorry.</h1>
+        <div class="alert alert-danger" role="alert">
+          Error Code: {{ top }}
+        </div>
+        <div class="alert alert-danger" role="alert">
+          {{ bottom }}
+        </div>
+        <p>We apologize for the inconvenience.</p>
+        
+      </div>
+    </div>
+  </div>
+
+    {% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<main class="container py-5 text-center">
+    <ol class="list-group list-group-numbered">
+    {% for user in users %}
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ user[0] }}</div>
+          </div>
+          <span class="badge bg-primary rounded-pill">{{usd(user[1])}}</span>
+        </li>
+
+    {% endfor %}
+    </ol>
+</main>
+
+{% endblock %}

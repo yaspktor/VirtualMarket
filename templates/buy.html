@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>Buy Stocks</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Welcome to our stock trading page! Here you can easily buy stocks of your choice. Simply enter the name of the stock you want to purchase and the amount you wish to buy. Our platform will process your request and execute the trade as quickly as possible. Don't miss out on potential profits, start investing today!</p>
+                        <form action="/buy" method="post">
+                            <div class="form-group py-2">
+                                <input autocomplete="off" autofocus class="form-control" id="symbol" name="symbol" placeholder="Symbol" type="text">
+                            </div>
+                            <div class="form-group py-2">
+                                <input  autocomplete="off" class="form-control" id="shares" name="shares" placeholder="Shares" min="1" type="number">
+                            </div>
+                            <button class="btn btn-primary btn-block" type="submit">Buy</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

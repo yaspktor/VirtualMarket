@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+
+<div class=" border  p-2">
+    <div class="row">
+      <div class="col-md-6  vertical-divider">
+
+
+<main class="container-fluid  text-center">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <img src="static/logo1.png" alt="VirtualMarket" class="img-fluid " width="500" >
+        <h2 class="mb-4">Stock and Investment Simulator</h2>
+        <p class="lead mb-5">Welcome to VirtualMarket, where you can buy shares of the biggest companies and test your investment skills. Our stock market simulator will help you learn how the stock market works, how to make investment decisions, and manage your portfolio.</p>
+        
+      </div>
+    </div>
+  </main>
+
+</div>
+<div class="col-md-6">
+
+
+<main class="container py-5 text-center">
+
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Profit</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+       <tbody>
+        {% for row in rows %}
+        <tr>
+            <td class="text-start">
+                <form action="/quote" method="post">
+                    <input type="hidden" name="symbol" value="{{row[0]}}">
+                
+                <a href="#" onclick="this.closest('form').submit()">{{row[0]}} </a>
+            </form>
+              
+            
+            
+            </th>
+            <td class="text-start">{{names[row[0]]}}</th>
+            <td class="text-end">{{row[1]}}</th>
+            <td class="text-end">{{usd(prices[row[0]])}}</th>
+                {% if (profits[row[0]] < 0)  %}
+            <td class="text-end" style="color:red">{{usd(profits[row[0]])}}</th>
+
+                {%else%}
+                <td class="text-end" style="color:green">{{usd(profits[row[0]])}}</th>
+                {%endif%}
+            <td class="text-end">{{ usd(prices[row[0]]*row[1]) }}</th>
+
+        </tr>
+        {% endfor %}
+        <tr>
+            <td class="border-0  text-start"  colspan="5">User cash</td>
+          
+            
+            <td class="border-0 text-end">{{ usd(cash) }}</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="5">TOTAL</td>
+                <td class="border-0 w-bold text-end">{{ usd(total) }}</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+        </main>
+
+
+    </div>
+</div>
+</div>
+
+{% endblock %}
