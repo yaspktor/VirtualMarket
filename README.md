@@ -23,4 +23,4 @@ Po zalogowaniu:
 
 ![quote](https://github.com/yaspktor/VirtualMarket/blob/main/sell_buy.png)
 
-![rank](https://github.com/yaspktor/VirtualMarket/blob/main/sell_buy.png)
+![rank](https://github.com/yaspktor/VirtualMarket/blob/main/rank.png)
