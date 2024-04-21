@@ -19,7 +19,7 @@ Projekt porusza takie zagadnienia jak:
 Zdjęcia poglądowe:
 
 Po zalogowaniu:
-![Home](https://github.com/yaspktor/WWW_Final_Project/blob/main/zasoby/Terminal_menu.png)
+![Home](https://github.com/yaspktor/VirtualMarket/blob/main/home.png)
 
 ![quote](https://github.com/yaspktor/VirtualMarket/blob/main/sell_buy.png)
 
