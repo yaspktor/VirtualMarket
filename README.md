@@ -1,20 +1,27 @@
 # VirtualMarket
 Projekt zaliczeniowy z przedmiotu Bazy Danych
 
-VirtualMarket jest prostym symulatorem giełdy, na której użytkownicy mogą sprawdzić swoje umiejętności w inwestowaniu. Każdy nowy użytkownik otrzymuje na start 10.000$, za które może kupować akcje różnych firm, a potem je sprzedawać. Ceny akcji są na bieżąco aktualizowane, dzięki czemu użytkownik może trenować na prawdziwych danych. Na stronie istnieje ranking najlepszych użytkowników, którym udało się pomnożyć początkowe saldo. 
-
+VirtualMarket jest prostym symulatorem giełdy, pomocnym dla osób początkujących w inwestowaniu, chcących sprawdzić swoje możliwości, bez ryzyka utraty własnych pieniędzy. Każdy nowy użytkownik otrzymuje na start 10.000$, które może inwestować w akcje. Ceny akcji są na bieżąco aktualizowane, dzięki czemu użytkownik może trenować na prawdziwych danych. Na stronie istnieje ranking najlepszych użytkowników, którzy zarobili najwięcej na giełdzie.
 
 Wykorzystane technologie:
-* Backend: Python - Flask
-* Baza Danych: LiteSQL
-* HTML, CSS, JS, Bootstrap
+* Python
+* Flask (Web Framework)
+* SQLite (Baza Danych)
+* HTML, CSS, Bootstrap, JavaScript (Front-end)
     
 
 Projekt porusza takie zagadnienia jak:
-* Tworzenie aplikacji Webowej
+* Podstawy web developmentu
 * Tworzenie systemu rejestracji i logowania dla użytkowników
-* Pobranie i przetworzenie danych z zewnętrznego API
-* Komunikacja z bazą danych przez serwer
+* Pobranie i przetwarzanie danych z zewnętrznego API
+* Komunikacja i zarządzanie bazami danych SQL przez serwer
+
+Funkcjonalności:
+* Rejestracja i logowanie użytkowników
+* Wyszukiwanie akcji i podgląd aktualnych notowań
+* Zakup i sprzedaż akcji
+* Możliwość przeglądu historii transakcji
+
 
 Zdjęcia poglądowe:
 
